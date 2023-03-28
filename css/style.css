@@ -1,0 +1,98 @@
+html {
+  height:100%;
+  padding:env(safe-area-inset); /* for iphone notch */
+  -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+  position:absolute;
+  min-height:100%;
+  width:100%;
+  top:0;
+  margin:0;
+  background-color:#191628;
+  color:#efeae2;
+  text-align:center;
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.container {
+  width:100%;
+  margin:0 auto;
+}
+
+.splash {
+  width:calc(100%-8em);
+  min-height:50vh;
+  margin:0;
+  padding:2em 4em;
+  background-color:#191628;
+  color:#efeae2;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.slice {
+  width:calc(100%-8em);
+  padding:2em 3em 3em;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.services {
+  background-color:#efeae2;
+  color:#191628;
+}
+
+.about {
+  background-color:#191628;
+  color:#efeae2;
+}
+
+.contact {
+  background-color:#efeae2;
+  color:#191628;
+  padding-bottom:4em;
+}
+
+/* text */
+
+h1 {
+  text-transform:uppercase;
+  margin-top:0;
+  font-size:3em;
+}
+
+h2.tagline {
+  font-style:italic;
+  font-size:x-large;
+}
+
+h3 {
+  font-size:xx-large;
+}
+
+ul.services-list {
+  list-style-type:none;
+  padding:0;
+  font-size:x-large;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1em;
+}
+
+ul.services-list li {
+  border:solid 3px;
+  border-radius:0.5em;
+  padding:0.5em 1em;
+}
+
+p {
+  max-width:600px;
+  font-size:x-large;
+}
