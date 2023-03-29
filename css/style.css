@@ -70,6 +70,10 @@ h1 {
   line-height:1.1em;
 }
 
+span.shape {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 h2.tagline {
   font-style:italic;
   font-size:2em;
