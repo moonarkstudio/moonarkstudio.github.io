@@ -10,10 +10,10 @@ body {
   width:100%;
   top:0;
   margin:0;
-  background-color:#191628;
+  background-color:#01010d;
   color:#efeae2;
   text-align:center;
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -23,11 +23,14 @@ body {
 
 .splash {
   width:calc(100%-8em);
-  min-height:50vh;
+  min-height:60vh;
   margin:0;
   padding:2em 4em;
-  background-color:#191628;
-  color:#efeae2;
+  background-color:#01010d;
+  background-image:url(https://s3.amazonaws.com/moonark.studio/moon.jpg);
+  background-size:cover;
+  background-position:center;
+  color:#f8f3ea;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -44,32 +47,33 @@ body {
 }
 
 .services {
-  background-color:#efeae2;
-  color:#191628;
+  background-color:#e9dfd6;
+  color:#01010d;
 }
 
 .about {
-  background-color:#191628;
-  color:#efeae2;
+  background-color:#01010d;
+  color:#e9dfd6;
 }
 
 .contact {
-  background-color:#efeae2;
-  color:#191628;
-  padding-bottom:4em;
+  background-color:#e9dfd6;
+  color:#01010d;
+  padding-bottom:5em;
 }
 
 /* text */
 
 h1 {
   text-transform:uppercase;
-  margin-top:0;
-  font-size:3em;
+  font-size:4em;
+  line-height:1.1em;
 }
 
 h2.tagline {
   font-style:italic;
-  font-size:x-large;
+  font-size:2em;
+  max-width:600px;
 }
 
 h3 {
@@ -80,6 +84,8 @@ ul.services-list {
   list-style-type:none;
   padding:0;
   font-size:x-large;
+  font-weight:bold;
+  font-style:italic;
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
@@ -95,4 +101,41 @@ ul.services-list li {
 p {
   max-width:600px;
   font-size:x-large;
+}
+
+/* roboto-mono-regular - greek_latin_greek-ext_latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'),
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-italic - greek_latin_greek-ext_latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Mono Italic'), local('RobotoMono-Italic'),
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-700 - greek_latin_greek-ext_latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Mono Bold'), local('RobotoMono-Bold'),
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-700italic - greek_latin_greek-ext_latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Mono Bold Italic'), local('RobotoMono-BoldItalic'),
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('https://s3.amazonaws.com/moonark.studio/fonts/roboto-mono-v6-greek_latin_greek-ext_latin-ext-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
