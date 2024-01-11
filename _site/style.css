@@ -22,7 +22,6 @@ body {
 }
 
 .splash {
-  width:calc(100%-8em);
   min-height:60vh;
   margin:0;
   padding:2em 4em;
@@ -38,7 +37,6 @@ body {
 }
 
 .slice {
-  width:calc(100%-8em);
   padding:2em 3em 3em;
   display:flex;
   flex-direction:column;
@@ -65,7 +63,6 @@ body {
 /* header */
 
 header {
-  width:calc(100%-8em);
   padding:0 1em;
 }
 
@@ -103,6 +100,23 @@ h1 {
 .navigation li .shape {
   padding-right:0.2em;
   margin:0;
+}
+
+/* footer */
+
+footer {
+  padding:1em 2em;
+}
+
+footer ul {
+  list-style-type:none;
+  padding:0;
+  font-size:large;
+  font-weight:bold;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:0.5em 4em;
 }
 
 /* text */
@@ -148,6 +162,81 @@ ul.services-list li {
 p {
   max-width:600px;
   font-size:x-large;
+}
+
+/* FORMS */
+
+form {
+  margin-top:2em;
+  width:100%;
+  max-width:600px;
+}
+
+form label {
+  display:block;
+  font-size:x-large;
+  font-weight:bold;
+}
+
+form input {
+  width:calc(100% - 26px);
+  height:2em;
+  border:3px solid;
+  border-radius:5px;
+  margin:1em 0;
+  padding:5px 10px;
+  font-size:1em;
+  display:block;
+  font-family: 'Roboto Mono', monospace;
+  font-weight:bold;
+  font-size:medium;
+  background-color:#e9dfd6;
+}
+
+form input:focus {
+  border-color:#db5c46;
+}
+
+form textarea {
+  width:calc(100% - 26px);
+  height:10em;
+  resize:none;
+  border:3px solid;
+  border-radius:5px;
+  margin:1em 0;
+  padding:5px 10px;
+  font-size:1em;
+  background-color:#e9dfd6;
+  font-family: 'Roboto Mono', monospace;
+  font-weight:bold;
+  font-size:medium;
+  display:block;
+}
+
+form textarea:focus {
+  border-color:#db5c46;
+}
+
+form button {
+  color:#000000;
+  border:3px solid;
+  border-radius:5px;
+  padding:5px 10px;
+  font-size:x-large;
+  background:none transparent;
+  cursor:pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-weight:bold;
+}
+
+@media (hover:hover) {
+  form button:hover {
+    color:#db5c46;
+  }
+}
+
+:focus-visible {
+  outline:none;
 }
 
 /* roboto-mono-regular - greek_latin_greek-ext_latin-ext */
