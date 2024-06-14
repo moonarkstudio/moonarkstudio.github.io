@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
   
   eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("./src/CNAME");
 
   return {
     dir: {
